@@ -208,5 +208,9 @@ input {
   100% {
     left: -400%;
     opacity: 1; } }
+#skills i {
+  font-size: 5rem; }
+#skills img {
+  width: 40%; }
 
 /*# sourceMappingURL=main.css.map */
