@@ -219,10 +219,11 @@ input{
   display: flex;
   justify-content: flex-start; }
 
-.work h2 {
+.work a{
+  text-decoration: none;
   margin-top: 0;
   align-self: flex-end;
-  color: #ffffff;
+  color: black;
   font-size: 2.125em;
   text-transform: uppercase;
   padding: 0px 0px 20px 20px;
