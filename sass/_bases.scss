@@ -266,5 +266,17 @@ input{
   @include imgProyect();
   }
 
+  /*CONTACTO*/
+
+  .personalLink{
+  list-style-type:none;
+  font-size:0.8em;
+}
+.personalLink a{
+  float:left;
+  margin-left: 1.1em;
+  font-size:3em;
+}
+
 
 

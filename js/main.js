@@ -38,3 +38,8 @@ $(document).ready(function(){
     }
   }); 
 }); 
+
+/*despliegue info links de contacto*/
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
