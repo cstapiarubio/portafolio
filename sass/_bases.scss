@@ -202,14 +202,26 @@ input{
   100%{left: -400%; opacity: 1;}
 }
 
+/*sobre mi*/
+
+#sobremi{
+  background-color: #4B8C91;
+}
+
 /*herramientas*/
 
+
 #skills{
+  background-color: #9EA1C2;
   i{
     font-size: 5rem;
   }
   img{
     width:40%;
+  }
+
+  .her{
+    @include herramientas();
   }
 }
 

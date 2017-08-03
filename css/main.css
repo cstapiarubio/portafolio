@@ -208,11 +208,24 @@ input {
   100% {
     left: -400%;
     opacity: 1; } }
+/*sobre mi*/
+#sobremi {
+  background-color: #4B8C91; }
+
 /*herramientas*/
-#skills i {
-  font-size: 5rem; }
-#skills img {
-  width: 40%; }
+#skills {
+  background-color: #9EA1C2; }
+  #skills i {
+    font-size: 5rem; }
+  #skills img {
+    width: 40%; }
+  #skills .her {
+    background-color: #E5F0E3;
+    margin: 10px;
+    border-radius: 15px;
+    width: 200px;
+    height: 320px;
+    text-align: center; }
 
 /*PROYECTOS*/
 .work .col {
