@@ -3,7 +3,6 @@ $(document).ready(function(){
   $("#sticker").sticky({topSpacing:0});
 });
 
-//https://dribbble.com/shots/3581904-HEALTHEX-Day-01
 
 //SMOOTH SCROLL MENU
 $(document).ready(function(){
@@ -40,6 +39,6 @@ $(document).ready(function(){
 }); 
 
 /*despliegue info links de contacto*/
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});
+$(function () {
+  $('[data-tooltip]').tooltip();
+})
