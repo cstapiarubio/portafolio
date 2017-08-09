@@ -2,14 +2,20 @@
   margin: 0;
   padding: 0;
 }
+#principal{
+  background-image: url('../img/happy-squarespace-developer-1.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 
 /*titulos*/
 h2 {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  color: #61708B;
+  color: #041E4B;
   font-size: 50px;
   padding: 80px 50px;
+  font-weight: bold;
 }
 
 p{
@@ -239,18 +245,20 @@ label {
 
 /*sobre mi*/
 #sobremi {
-  background: linear-gradient(to left, #DFAAF1, whitesmoke);
   margin-top: -30px;
   height: 100%;
   p{
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Lora', serif;
     font-size: 20px;
+    width: 610px;
+    background-color: #C4DFE6;
+    border-radius: 15px;
   }
 }
 
+
 /*herramientas*/
 #skills {
-  background-color: #E1E6EF;
    margin-top: -40px;
    height: 100%;
    i {

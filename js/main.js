@@ -1,9 +1,3 @@
-$(document).ready(function(){
-  $('#slider').fadeIn('slow').delay(200);
-  $("#sticker").sticky({topSpacing:0});
-});
-
-
 //SMOOTH SCROLL MENU
 $(document).ready(function(){
   $("a").on('click', function(event) {
