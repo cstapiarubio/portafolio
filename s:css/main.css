@@ -3,13 +3,23 @@
   margin: 0;
   padding: 0; }
 
-h1, h2 {
+#principal {
+  background-image: url("../img/happy-squarespace-developer-1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+/*titulos*/
+h2 {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  color: whitesmoke; }
+  color: #041E4B;
+  font-size: 50px;
+  padding: 80px 50px;
+  font-weight: bold; }
 
 p {
-  color: #523634; }
+  color: #523634;
+  font-family: 'Roboto Slab', serif; }
 
 i {
   color: #F4EADE; }
@@ -20,20 +30,6 @@ i {
   height: 70px;
   position: relative;
   z-index: 999; }
-
-.menu {
-  margin: 0 30px 0 0; }
-  .menu a {
-    font-family: 'Merriweather', serif;
-    font-weight: 900;
-    clear: right;
-    text-decoration: none;
-    color: #FEFFFF;
-    margin: 0 10px;
-    line-height: 70px;
-    letter-spacing: .9px;
-    text-transform: uppercase;
-    transition: all 250ms ease; }
 
 @keyframes strike {
   0% {
@@ -55,6 +51,20 @@ i {
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-iteration-count: infinite; }
+
+.menu {
+  margin: 0 30px 0 0; }
+  .menu a {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    clear: right;
+    text-decoration: none;
+    color: #FEFFFF;
+    margin: 0 10px;
+    line-height: 70px;
+    letter-spacing: .9px;
+    text-transform: uppercase;
+    transition: all 250ms ease; }
 
 .menu img {
   margin: 0 30px;
@@ -109,6 +119,8 @@ label {
   height: 200vh;
   top: 0;
   left: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
   background: rgba(60, 63, 114, 0.6); }
 
 .photo h4 {
@@ -217,23 +229,41 @@ label {
     opacity: 1; } }
 /*sobre mi*/
 #sobremi {
-  background-color: #7CAA2D;
-  height: 400px;
-  margin-top: -40px; }
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 0;
+  margin-top: -30px;
+  height: 100%; }
+  #sobremi p {
+    padding: 30px;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    width: 100%;
+    background-color: #C4DFE6;
+    border-radius: 15px; }
 
 /*herramientas*/
 #skills {
-  background-color: #CB6318;
-  margin-top: -40px; }
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 0;
+  margin-top: -27px;
+  height: 100%; }
   #skills i {
     font-size: 5rem;
-    color: #EB8A3E; }
+    color: #F3699D; }
   #skills img {
     width: 40%;
     color: #EB8A3E; }
+  #skills a {
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 .912rem 0;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    display: block; }
 
 #skills .her {
-  background-color: #F5E356;
+  background-color: #C4DFE6;
   margin: 10px;
   border-radius: 15px;
   width: 200px;
@@ -242,12 +272,32 @@ label {
 
 /*PROYECTOS*/
 #proyectos {
-  background-color: #34888C;
+  background-color: #C4DFE6;
   margin-top: -40px;
-  height: 600px; }
+  height: 100%; }
   #proyectos a {
     color: #2F3131;
     font-weight: 900; }
+  #proyectos .pro:hover {
+    opacity: 0.7; }
+  #proyectos .col-1 {
+    background-image: url("../img/translab-iloveimg-cropped.png");
+    background-size: cover; }
+  #proyectos .col-2 {
+    background-image: url("../img/pint.png");
+    background-size: cover; }
+  #proyectos .col-3 {
+    background-image: url("../img/lyft.png");
+    background-size: cover; }
+  #proyectos .col-4 {
+    background-image: url("../img/freelancer.png");
+    background-size: cover; }
+  #proyectos .col-5 {
+    background-image: url("../img/portafoliosass.png");
+    background-size: cover; }
+  #proyectos .col-6 {
+    background-image: url("../img/labcar.png");
+    background-size: cover; }
 
 .work .col {
   display: flex;
@@ -267,67 +317,38 @@ label {
   height: 200px;
   border: 3px solid #ffffff; }
 
-.col:hover {
-  opacity: 0.4; }
-
-.col-1 {
-  background-image: url("../img/translab-iloveimg-cropped.png");
-  background-size: cover;
-  opacity: 0.7; }
-
-.col-2 {
-  background-image: url("../img/pint.png");
-  background-size: cover;
-  opacity: 0.7; }
-
-.col-3 {
-  background-image: url("../img/lyft.png");
-  background-size: cover;
-  opacity: 0.7; }
-
-.col-4 {
-  background-image: url("../img/freelancer.png");
-  background-size: cover;
-  opacity: 0.7; }
-
-.col-5 {
-  background-image: url("../img/portafoliosass.png");
-  background-size: cover;
-  opacity: 0.7; }
-
-.col-6 {
-  background-image: url("../img/labcar.png");
-  background-size: cover;
-  opacity: 0.7; }
-
 /*CONTACTO*/
 #contacto {
-  background-color: #ED5752;
-  height: 300px;
-  margin-top: -40px; }
-
-.fa {
-  color: #FFCCBB;
-  font-size: 3em;
-  margin-top: 80px; }
-
-.personalLink {
-  list-style-type: none;
-  font-size: 0.8em; }
-  .personalLink a {
-    float: left;
-    margin-left: 1.1em;
-    font-size: 3em; }
+  background-image: url("../img/developer-iloveimg-cropped.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-top: -250px;
+  height: 100%;
+  text-align: center; }
+  #contacto .fa {
+    color: #476268;
+    font-size: 3em;
+    padding-left: 100px;
+    margin-top: -50px; }
+  #contacto p {
+    text-align: center;
+    color: #61708B;
+    float: right;
+    position: relative; }
+  #contacto h2 {
+    padding-top: 600px; }
 
 /*footer*/
 footer {
-  background-color: #92AAC7; }
+  background-color: #8BCFCC;
+  height: 100%; }
   footer p {
+    color: #61708B;
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
     margin-top: 32px;
-    height: 25px; }
+    font-family: 'Roboto Slab', serif; }
 
 /*# sourceMappingURL=main.css.map */

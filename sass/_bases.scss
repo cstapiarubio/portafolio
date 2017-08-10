@@ -35,22 +35,6 @@ i{
   z-index: 999; 
 }
 
-.menu {
-  margin: 0 30px 0 0; 
-  a {
-  font-family: 'Merriweather', serif;
-  font-weight: 900;
-  clear: right;
-  text-decoration: none;
-  color: #FEFFFF;
-  margin: 0 10px;
-  line-height: 70px;
-  letter-spacing: .9px;
-  text-transform: uppercase;
-  transition: all 250ms ease; 
-  } 
-}
-
 @keyframes strike {
   0% {
     width: 0; }
@@ -71,6 +55,23 @@ i{
   animation-duration: 1s;
   animation-timing-function: ease;
   animation-iteration-count: infinite; }
+
+.menu {
+  margin: 0 30px 0 0; 
+  a {
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  clear: right;
+  text-decoration: none;
+  color: #FEFFFF;
+  margin: 0 10px;
+  line-height: 70px;
+  letter-spacing: .9px;
+  text-transform: uppercase;
+  transition: all 250ms ease; 
+  } 
+}
+
 
 .menu img {
   margin: 0 30px;
@@ -245,12 +246,15 @@ label {
 
 /*sobre mi*/
 #sobremi {
+  background-color: rgba(255,255,255,0.5);
+  padding-bottom:0;
   margin-top: -30px;
   height: 100%;
   p{
+    padding: 30px;
     font-family: 'Lora', serif;
     font-size: 20px;
-    width: 610px;
+    width: 100%;
     background-color: #C4DFE6;
     border-radius: 15px;
   }
@@ -259,15 +263,27 @@ label {
 
 /*herramientas*/
 #skills {
-   margin-top: -40px;
+   background-color: rgba(255,255,255,0.5);
+   padding-top:0;
+   margin-top: -27px;
    height: 100%;
    i {
     font-size: 5rem; 
-    color:#EB8A3E;
+    color:#F3699D;
   }
   img {
     width: 40%;
     color:#EB8A3E; 
+  }
+
+  a{
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 .912rem 0;
+    font-weight: 400;
+    color: black;
+    text-align:center;
+    display: block;
   }
  }
 
@@ -291,30 +307,9 @@ label {
 color: #2F3131;
 font-weight: 900;
  }
-}
 
-.work .col {
-  display: flex;
-  justify-content: flex-start; 
-}
-
-.work a {
-  text-decoration: none;
-  margin-top: 0;
-  align-self: flex-end;
-  color: black;
-  font-size: 2.125em;
-  text-transform: uppercase;
-  padding: 0px 0px 20px 20px;
-  letter-spacing: 5px; }
-
-.work .col {
-  height: 200px;
-  border: 3px solid #ffffff; 
-}
-
-.col:hover {
-  opacity: 0.4; 
+ .pro:hover {
+  opacity: 0.7; 
 }
 
 .col-1 {
@@ -346,6 +341,32 @@ font-weight: 900;
   background-image: url("../img/labcar.png");
   @include imgProyect();
    }
+
+
+}
+
+.work .col {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.work a {
+  text-decoration: none;
+  margin-top: 0;
+  align-self: flex-end;
+  color: black;
+  font-size: 2.125em;
+  text-transform: uppercase;
+  padding: 0px 0px 20px 20px;
+  letter-spacing: 5px; }
+
+.work .col {
+  height: 200px;
+  border: 3px solid #ffffff; 
+}
+
+
+
 
 /*CONTACTO*/
 
