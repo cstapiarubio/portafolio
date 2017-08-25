@@ -271,7 +271,6 @@ label {
 #skills div.infoher {
   text-align: center;
   position: relative;
-  overflow: hidden;
   width: 180px;
   height: 190px;
   background: rgba(58, 52, 42, 0.4);
@@ -279,17 +278,10 @@ label {
   #skills div.infoher a {
     font-size: 2.28em;
     font-weight: 400;
-    color: #303131;
-    text-align: center;
-    display: block;
-    transform: translate3d(0, 100%, 0);
-    transition: transform 0.35s; }
+    color: red;
+    text-align: center; }
   #skills div.infoher p {
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity 0.35s;
-    transform: 0.35s;
-    color: #303131; }
+    color: red; }
   #skills div.infoher:before {
     content: '';
     position: absolute;
@@ -297,7 +289,7 @@ label {
     bottom: 30px;
     left: 30px;
     right: 30px;
-    border: 1px solid #ffff;
+    border: 1px solid red;
     opacity: 0;
     transform: scale(0);
     transition: opacity 0.35s, transform 0.35s; }
@@ -318,14 +310,14 @@ label {
     transition: opacity 0.35s; }
   #skills div.her:hover img {
     opacity: 0.4; }
-  #skills div.her:hover div.infoher {
+  #skills div.her:hover #skills div.infoher {
     background: rgba(58, 52, 42, 0); }
-    #skills div.her:hover div.infoher:before {
+    #skills div.her:hover #skills div.infoher:before {
       opacity: 1;
       transform: scale(1); }
-    #skills div.her:hover div.infoher a {
+    #skills div.her:hover #skills div.infoher a {
       transform: translate3d(0, 0, 0); }
-    #skills div.her:hover div.infoher p {
+    #skills div.her:hover #skills div.infoher p {
       opacity: 1;
       transform: scale(1); }
 
