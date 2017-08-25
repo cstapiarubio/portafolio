@@ -1,9 +1,10 @@
 /* fx nav color scroll*/
 $(document).ready(function() {
 $(window).scroll(function() {
-        $('#sticker').toggleClass('nav-trans', $(this).scrollTop() > $('#sticker').height());
+        $('.nav').toggleClass('nav-trans', $(this).scrollTop() > $('.nav').height());
       });
 });
+
 
 //SMOOTH SCROLL MENU
 $(document).ready(function(){
