@@ -1,7 +1,7 @@
 /* fx nav color scroll*/
 $(document).ready(function() {
 $(window).scroll(function() {
-        $('.nav').toggleClass('nav-trans', $(this).scrollTop() > $('.nav').height());
+        $('#nav-trans').toggleClass('.nav', $(this).scrollTop() > $('#nav-trans').height());
       });
 });
 

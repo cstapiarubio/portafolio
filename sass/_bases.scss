@@ -29,42 +29,24 @@ i{
 
 /*MENU*/
 
-/*.nav{
-    color: #ffffff;
-    position: fixed;
+.nav{
+  background-color: green !important;
+  ul li a {
+    color: red;
+  }
+}
+
+.navbar-fixed {
+  position: absolute;
+  z-index:999;
+  text-align: right;
+  height: 70px;
 }
 
 .nav-trans{
-  background-color: #ffffff !important;
-}
+   transition: all 1s ease;
+  }
 
-.nav {
-  text-align: right;
-  height: 70px;
-  position: relative;
-  z-index: 999; 
-  }*/
-
-  @keyframes strike {
-    0% {
-      width: 0; }
-      100% {
-        width: 100%; } }
-        .strike {
-          position: relative; }
-
-          .strike:hover:after {
-            content: ' ';
-            position: absolute;
-            top: 40%;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: #FEFFFF;
-            animation-name: strike;
-            animation-duration: 1s;
-            animation-timing-function: ease;
-            animation-iteration-count: infinite; }
 
 /*.menu {
   margin: 0 30px 0 0; 
@@ -200,7 +182,7 @@ i{
 
                                       /*menú*/
 
-  /*.menu {
+  .menu {
     text-align: center;
     width: 100%;
     display: none;
@@ -210,7 +192,7 @@ i{
     margin: 0;
     color: #6D85A8; 
    } 
-   }*/
+   }
 
    #toggle:checked + .menu {
     display: block;
