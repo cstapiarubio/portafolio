@@ -13,7 +13,7 @@ h2 {
   font-family: 'Lora', sans-serif;
   text-align: center;
   color: #041E4B;
-  font-size: 50px;
+  font-size: 3em;
   padding: 80px 50px;
   font-weight: bold;
 }
@@ -44,6 +44,8 @@ i{
    transition: all 1s ease;
   }
 
+ 
+
 /*HOME*/
         .photo {
           width: 100%;
@@ -64,6 +66,14 @@ i{
     color: #fff;
     font-weight:bold;
     font-size: 1.3em;
+  }
+
+   @media screen and (max-width: 500px){
+    .photo{
+      ul li a{
+        font-size: .5em;
+      }
+    }
   }
           }
 
@@ -235,7 +245,7 @@ i{
                               width:100px;
                               height:100px;
                               border-radius: 5px;
-                              background: rgba(60,54,44,0.6);
+                              background: rgba(60,54,44,0.8);
                               a{
                                 font-size: 1em;
                                 font-weight: 400;
@@ -254,11 +264,11 @@ i{
                               background-color: #EEF3F5;
                               margin: 10px;
                               border-radius: 15px;
-                              width: 200px;
-                              height: 205px;
+                              width: 180px;
+                              height: 180px;
                              img{
                                 width:100%;
-                                height:100%;
+                                //height:100%;
                               }
 
                              &:hover .infoher{
@@ -322,8 +332,11 @@ i{
                             }
 
                             .work a {
+                              background-color:#B7BCBE;
+                              border-radius:5px;
                               text-decoration: none;
                               margin-top: 0;
+                              height: 40px;
                               align-self: flex-end;
                               color: black;
                               font-size: 2.125em;
@@ -345,9 +358,9 @@ i{
                                 background-image: url('../img/developer-iloveimg-cropped.png');
                                 background-repeat: no-repeat;
                                 background-position: center;
-                                position:relative;
-                                margin-top: -250px;
-                                height: 100%;
+                                
+                                
+                                height: 450px;
                                 text-align: center;
                                 .fa{
                                  color: #476268;
@@ -386,10 +399,27 @@ i{
                               }
                             }
 
+#precontacto{
+  h2{
+    padding: 40px 50px 0px 50px;
+  }
+}
 
+#postcontacto{
+  .fa{
+   color: #476268;
+   font-size: 3em;
+ }
+ p{
+  text-align: center;
+ }
 
-
-
+ @media(max-width:768px){
+  p{
+    padding: 20px;
+  }
+ }
+}
 
 
 

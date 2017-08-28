@@ -12,8 +12,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Arimo|Arvo|Crimson+Text|Faustina|Hind|Lora|Manuale|Noto+Serif|Oxygen|PT+Sans|PT+Serif|Raleway|Roboto+Slab|Titillium+Web" rel="stylesheet">
 	<!--CSS-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!--ICONOS SKILLS TÉCNICOS-->
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- LOGO -->
 	<link rel="shortcut icon" href="img/perfil.png">
 </head>
@@ -22,8 +21,9 @@
 	<section class="photo">
 		<div class="navbar-fixed">
 			<nav class ="transparent nav" id="nav-trans">
-			<div class="nav-wrapper menu">
+				<div class="nav-wrapper menu">
 					<!--<a href="#" class="brand-logo"><img src="img/Carolina Sol.png"></a>-->
+					<a href="#" data-activates="sidenav" class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li><a href="#sobremi">Sobre mí</a></li>
 						<li><a href="#skills">Herramientas</a></li>
@@ -33,7 +33,14 @@
 				</div>
 			</nav>
 		</div>
-	
+
+		<ul id="sidenav" class="side-nav">
+			<li><a href="#sobremi"><i class="material-icons">account_circle</i></a></li>
+			<li><a href="#skills"><i class="material-icons">build</i></a></li>
+			<li><a href="#proyectos"><i class="material-icons">code</i></a></li>
+			<li><a href="#contacto"><i class="material-icons">email</i></a></li>
+		</ul>
+
 
 		<!--HOME-->
 		<div class="photo-text">
@@ -64,168 +71,171 @@
 			</section>
 
 			<!--SKILLS-->
-	<section id="skills">
-                <h2>Herramientas</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col m3 s6 her">
-                            <img src="img/bootstrap.png">
-                          
-                            <div class="infoher">
-                                <a href="http://getbootstrap.com/">Bootstrap</a>
-                                <p>Framework más popular de HTML, CSS y JS para el desarrollo responsive y mobile.</p>
-                              
-                            </div>
-                                </div>
-                                                     
-                                                                          
-                            <div class="col m3 s6 her">
-                                <img src="img/materialize.png">
-                                <a class="enlace"></a>
-                                <div class="infoher">
-                                    <a href="http://materializecss.com/">Materialize</a>
-                                    <p>Framework basado en Material Design, que se usa para el desarrollo front-end responsive.</p></div>
-                                </div>
-                                <div class="col m3 s6 her">
-                                    <img src="img/css.png">
-                                    <div class="infoher">
-                                        <a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a>
-                                        <p>Hojas de estilo en cascadas es el lenguaje utilizado para describir la presentación de documentos HTML o XML</p></div>
-                                    </div>
-                                    <div class="col m3 s6 her">
-                                        <img src="img/sass.png">
-                                        <a class="enlace"></a>
-                                        <div class="infoher">
-                                            <a href="http://sass-lang.com/">SASS</a>
-                                            <p>Lenguaje de extensión profesional para CSS.</p></div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col m3 s6 her">
-                                            <img src="img/gulp.png">
-                                            <a class="enlace"></a>
-                                            <div class="infoher">
-                                                <a href="https://gulpjs.com/">Gulp</a>
-                                                <p>Conjunto de herramientas para automatizar tareas</p></div>
-                                            </div>
-                                            <div class="col m3 s6 her">
-                                                <img src="img/html.png">
-                                                <a class="enlace"></a>
-                                                <div class="infoher">
-                                                    <a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
-                                                    <p>Lenguaje de Marcado para Hipertextos, se usa para crear y representar visualmente una página web</p></div>
-                                                </div>
-                                                <div class="col m3 s6 her">
-                                                    <img src="img/js.png">
-                                                    <a class="enlace"></a>
-                                                    <div class="infoher">
-                                                        <a href="https://www.javascript.com/">Javascript</a>
-                                                        <p>Lenguaje de programación, dialecto de ECMAScript. Está orientado a objetos,basado en prototipos y dinámico.</p></div>
-                                                    </div>
-                                                    <div class="col m3 s6 her">
-                                                        <img src="img/jquery.png">
-                                                        <a class="enlace"></a>
-                                                        <div class="infoher">
-                                                            <a href="https://jquery.com/">Jquery</a>
-                                                            <p>Es una biblioteca multiplataforma de JavaScript, que permite simplificar la interacción con los documentos HTML.</p></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col m4 s6 her">
-                                                            <img src="img/trello.png">
-                                                            <a class="enlace"></a>
-                                                            <div class="infoher">
-                                                                <a href="https://trello.com/">Trello</a>
-                                                                <p>Herramienta colaborativa que organiza tus proyectos en tablones.</p></div>
-                                                            </div>
-                                                            <div class="col m4 s6 her">
-                                                                <img src="img/slack.png">
-                                                                <a class="enlace"></a>
-                                                                <div class="infoher">
-                                                                    <a href="https://slack.com/">Slack</a>
-                                                                    <p>Herramienta de comunicación en equipo</p></div>
-                                                                </div>
-                                                                <div class="col m4 s12 her">
-                                                                    <img src="img/github.png">
-                                                                    
-                                                                    <div class="infoher">
-                                                                        <a href="https://github.com/">Github</a>
-                                                                        <p>Plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.</p></div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </section>
-			
-													 </div>
-
-													<!--PROYECTOS-->
-													<section id="proyectos" class="container-fluid work">
-														<h2>Proyectos</h2>
-														<div class="row">
-															<div class="pro col-1 col m4 s12">
-																<a href="https://cstapiarubio.github.io/trans-lab/">TRANSLAB</a>
-															</div>
-															<div class="pro col-2 col m4 s12">
-																<a href="https://cstapiarubio.github.io/pinterest/">PINTEREST</a>
-															</div>
-															<div class="pro col-3 col m4 s12">
-																<a href="https://cstapiarubio.github.io/lyft-flexbox/">LYFT</a>
-															</div>
+			<section id="skills">
+				<h2>Herramientas</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col m3 s12 her">
+							<img src="img/bootstrap.png">
+							<div class="infoher">
+								<a href="http://getbootstrap.com/">Bootstrap</a>
+								<p>Framework más popular de HTML, CSS y JS para el desarrollo responsive y mobile.</p>
+							</div>
+						</div>                                             
+						<div class="col m3 s3 her">
+							<img src="img/materialize.png"> 
+							<div class="infoher">
+								<a href="http://materializecss.com/">Materialize</a>
+								<p>Framework basado en Material Design, que se usa para el desarrollo front-end responsive.</p></div>
+							</div>
+							<div class="col m3 s3 her">
+								<img src="img/css.png">
+								<div class="infoher">
+									<a href="https://developer.mozilla.org/es/docs/Web/CSS">CSS</a>
+									<p>Hojas de estilo en cascadas es el lenguaje utilizado para describir la presentación de documentos HTML o XML</p></div>
+								</div>
+								<div class="col m3 s3 her">
+									<img src="img/sass.png">
+									<div class="infoher">
+										<a href="http://sass-lang.com/">SASS</a>
+										<p>Lenguaje de extensión profesional para CSS.</p></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col m3 s3 her">
+										<img src="img/gulp.png">
+										<div class="infoher">
+											<a href="https://gulpjs.com/">Gulp</a>
+											<p>Conjunto de herramientas para automatizar tareas</p></div>
+										</div>
+										<div class="col m3 s3 her">
+											<img src="img/html.png">
+											<div class="infoher">
+												<a href="https://developer.mozilla.org/es/docs/Web/HTML">HTML</a>
+												<p>Lenguaje de Marcado para Hipertextos, se usa para crear y representar una página web</p></div>
+											</div>
+											<div class="col m3 s3 her">
+												<img src="img/js.png">  
+												<div class="infoher">
+													<a target="_blank" href="https://www.javascript.com/">Javascript</a>
+													<p>Lenguaje de programación, dialecto de ECMAScript.</p></div>
+												</div>
+												<div class="col m3 s3 her">
+													<img src="img/jquery.png"> 
+													<div class="infoher">
+														<a href="https://jquery.com/">Jquery</a>
+														<p>Es una biblioteca multiplataforma de JavaScript, que permite simplificar la interacción con los documentos HTML.</p></div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col m4 s4 her">
+														<img src="img/trello.png">
+														<div class="infoher">
+															<a href="https://trello.com/">Trello</a>
+															<p>Herramienta colaborativa que organiza tus proyectos en tablones.</p></div>
 														</div>
-														<div class="row">
-															<div class="pro col-4 col m4 s12">
-																<a href="https://cstapiarubio.github.io/freelancer/">FREELANCER</a>
+														<div class="col m4 s4 her">
+															<img src="img/slack.png">
+															<div class="infoher">
+																<a href="https://slack.com/">Slack</a>
+																<p>Herramienta de comunicación en equipo</p></div>
 															</div>
-															<div class="pro col-5 col m4 s12">
-																<a href="https://cstapiarubio.github.io/portafolio-sass/">PORTAFOLIO-SASS</a>
-															</div>
-															<div class="pro col-6 col m4 s12">
-																<a href="https://cstapiarubio.github.io/labcar/">LABCAR</a>
+															<div class="col m4 s4 her">
+																<img src="img/github.png"> 
+																<div class="infoher">
+																	<a href="https://github.com/">Github</a>
+																	<p>Plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.</p></div>
+																</div>
 															</div>
 														</div>
 													</section>
+												</div>
 
-													<!--CONTACTO-->
-													<section id="contacto">
-														<div class="container">
-															<div class="row">
+												<!--PROYECTOS-->
+												<section id="proyectos" class="container-fluid work">
+													<h2>Proyectos</h2>
+													<div class="row">
+														<div class="pro col-1 col m4 s12">
+															<a href="https://cstapiarubio.github.io/trans-lab/">TRANSLAB</a>
+														</div>
+														<div class="pro col-2 col m4 s12">
+															<a href="https://cstapiarubio.github.io/pinterest/">PINTEREST</a>
+														</div>
+														<div class="pro col-3 col m4 s12">
+															<a href="https://cstapiarubio.github.io/lyft-flexbox/">LYFT</a>
+														</div>
+													</div>
+													<div class="row">
+														<div class="pro col-4 col m4 s12">
+															<a href="https://cstapiarubio.github.io/freelancer/">FREELANCER</a>
+														</div>
+														<div class="pro col-5 col m4 s12">
+															<a href="https://cstapiarubio.github.io/portafolio-sass/">PORTAFOLIO-SASS</a>
+														</div>
+														<div class="pro col-6 col m4 s12">
+															<a href="https://cstapiarubio.github.io/labcar/">LABCAR</a>
+														</div>
+													</div>
+												</section>
+
+												<!--CONTACTO-->
+												<section id="precontacto">
+													<div class="container">
+														<div class="row">
+															<div class="col m12 center">
 																<h2>¡Estemos en contacto!</h2>
-																<div class="col m4 s4">							
-																	<a data-placement="bottom"><i class="fa fa-envelope-o" aria-hidden="true"></i><p>cstapiarubio@gmail.com</p></a>
-																</div>
-																<div class="col m4 s4">
+															</div>
+														</div>
+													</div>
+												</section>
+												<section id="contacto">
+													
+												</section>
+												<section id="postcontacto">
+													<div class="container">
+														<div class="row">
+															
+															<div class="col m4 s12">							
+																<p>
+																	<a data-placement="bottom"><i class="fa fa-envelope-o" aria-hidden="true"></i><br><br>cstapiarubio@gmail.com</a>
+																</p>
+															</div>
+															<div class="col m4 s12">
+																<p>
 																	<a data-placement="bottom" href="https://github.com/cstapiarubio"><i class="fa fa-github" aria-hidden="true"></i></a>
-																</div>
-																<div class="col m4 s4">
+																</p>
+															</div>
+															<div class="col m4 s12">
+																<p>
 																	<a data-placement="bottom" href="https://www.linkedin.com/in/carolina-tapia-rubio/"target= "blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-																</div>	
-															</div>
+																</p>
+															</div>	
 														</div>
-													</section>
+													</div>
+												</section>
 
-													<!--FOOTER-->
-													<footer>
-														<div class="container">
-															<div class="row">
-																<div class="col m12 s12">
-																	<p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Carolina Sol</p>
-																	<p>Laboratoria 2017</p>
-																	<p>Santiago, Chile</p> 
-																</div>
+												<!--FOOTER-->
+												<footer>
+													<div class="container">
+														<div class="row">
+															<div class="col m12 s12">
+																<p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by Carolina Sol</p>
+																<p>Laboratoria 2017</p>
+																<p>Santiago, Chile</p> 
 															</div>
 														</div>
-													</footer>
-													<!-- CDN JQUERY-->
-													<script
-													src="http://code.jquery.com/jquery-3.2.1.min.js"
-													integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-													crossorigin="anonymous"></script>
-													<!-- CDN MATERIALIZE JS-->
-													<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-													<!-- JS-->
-													<script type="text/javascript" src="js/main.js"></script>
-												</body>
-												</html>
+													</div>
+												</footer>
+												<!-- CDN JQUERY-->
+												<script
+												src="http://code.jquery.com/jquery-3.2.1.min.js"
+												integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+												crossorigin="anonymous"></script>
+												<!-- CDN MATERIALIZE JS-->
+												<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+												<!-- JS-->
+												<script type="text/javascript" src="js/main.js"></script>
+											</body>
+											</html>
 
 
